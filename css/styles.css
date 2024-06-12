@@ -11731,4 +11731,43 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+
+  .image-link img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; /* Taille de l'image */
+    height: auto;
+  }
+
+  .image-link img:hover {
+    transform: scale(1.1);
+  }
+  .image-link .image-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #063ef4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+  }
+  .image-link .image-layer:hover {
+    transform: translateY(0);
+  }
+  .hover-element {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .hover-element:hover {
+    transform: scale(1.1);
+  }
 }
